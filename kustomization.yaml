@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+# Optional: Set image tags dynamically (optional customization)
+images:
+  - name: registry.digitalocean.com/yestodocr/portfolio-website
+    newTag: latest
+
+# Optional: Add namespace (if needed)
+namespace: portfolio-website
