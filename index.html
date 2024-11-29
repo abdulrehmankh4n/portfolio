@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Personal Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Abdur Rahman Habib" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Abdur Rahman Habib">Abdur Rahman<br>Habib</h1>
+          <p class="title">DevOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:abdulrehmankhan767@gmail.com" class="contact-link">abdulrehmankhan767@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+923489586267" class="contact-link">+92 348 958 6267</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>B-17 Islamabad, Pakistan</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/abdurrahman-habib/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I am a passionate DevOps Engineer specializing in designing scalable cloud infrastructures and automating processes for seamless application deployment and management. With experience in AWS services, CI/CD pipelines, and containerization, I focus on delivering reliable, secure, and cost-optimized solutions for businesses.
+          </p>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service">
+          <h3 class="h3 service-title">What I Do</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/cloud-computing.svg" alt="Cloud Solutions Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Solutions</h4>
+                <p class="service-item-text">Expertise in designing and managing scalable cloud environments using AWS services like EC2, RDS, S3, Lambda, and EKS.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/cicd-solid.svg" alt="CI/CD Pipelines Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CI/CD Pipelines</h4>
+                <p class="service-item-text">Building efficient CI/CD pipelines with tools like Jenkins, GitHub Actions, and AWS CodePipeline for streamlined application delivery.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/IASC.svg" alt="Infrastructure as Code Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Infrastructure as Code</h4>
+                <p class="service-item-text">Automating infrastructure provisioning and management using Terraform, AWS CloudFormation, and Ansible.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/monitoring.svg" alt="Monitoring Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Monitoring & Reliability</h4>
+                <p class="service-item-text">Monitoring systems with tools like CloudWatch, Grafana, and Prometheus to ensure reliability and performance.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+<!-- RESUME -->
+<article class="resume" data-page="resume">
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- Education Section -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Bachelor of Science in Software Engineering</h4>
+        <span>COMSATS University Islamabad | February 2024</span>
+        <p class="timeline-text">GPA: 3.01/4.00</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Experience</h3>
+    </div>
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Junior DevOps Engineer</h4>
+        <span>CloudQuik | September 2023 - Present</span>
+        <p class="timeline-text">
+          • Designed and managed scalable AWS cloud environments using services like EC2, RDS, S3, Lambda, and EKS.<br>
+          • Automated provisioning, configuration, and management of infrastructure with Terraform and Ansible.<br>
+          • Built end-to-end CI/CD pipelines with Jenkins, AWS CodePipeline, and GitHub Actions.<br>
+          • Applied security best practices for IAM, VPC peering, and managed security groups.<br>
+          • Implemented cost optimization strategies by monitoring resource usage and adjusting AWS services.<br>
+          • Troubleshot and resolved complex network configurations involving VPC, Route 53, and Elastic Load Balancers (ALB/NLB).<br>
+          • Integrated automated testing in CI/CD pipelines to improve the quality of deployments.<br>
+          • Collaborated with cross-functional teams for continuous improvement of cloud architecture and DevOps practices.<br>
+          • Managed cloud backup strategies and disaster recovery processes using AWS Backup and S3.<br>
+        </p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">DevOps Intern</h4>
+        <span>eWarenet | March 2023 - August 2023</span>
+        <p class="timeline-text">
+          • Assisted in managing AWS resources such as EC2 and S3 for application hosting.<br>
+          • Supported AWS IAM configuration for security management.<br>
+          • Contributed to deploying applications using AWS Elastic Beanstalk and Terraform.<br>
+          • Helped set up monitoring using CloudWatch and alerts for resource usage.<br>
+          • Assisted in troubleshooting production issues related to AWS infrastructure.<br>
+          • Learned and applied containerization concepts using Docker and Kubernetes for application deployments.<br>
+          • Participated in setting up automated backups for databases and application data.<br>
+          • Documented infrastructure setup and deployment processes for team collaboration.<br>
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skill">
+    <h3 class="h3 skills-title">My Skills</h3>
+    <ul class="skills-list content-card">
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Cloud Platforms:</h5>
+          <h5 class="timeline-text">AWS (EC2, RDS, S3, Lambda, EKS, Route 53, CloudWatch, VPC)</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Infrastructure as Code:</h5>
+          <h5 class="timeline-text">Terraform, CloudFormation, Ansible</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">CI/CD Tools:</h5>
+          <h5 class="timeline-text">Jenkins, GitHub Actions, AWS CodePipeline, GitLab CI</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Containerization & Orchestration:</h5>
+          <h5 class="timeline-text">Docker, Kubernetes, Helm Charts</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Monitoring & Logging:</h5>
+          <h5 class="timeline-text">CloudWatch, Grafana, Prometheus, ELK Stack (Elasticsearch, Logstash, Kibana)</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Version Control:</h5>
+          <h5 class="timeline-text">Git, GitHub, GitLab, Bitbucket</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Scripting & Automation:</h5>
+          <h5 class="timeline-text">Python, Bash, PowerShell, YAML</h5>
+          <p></p>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Security & Compliance:</h5>
+          <h5 class="timeline-text">IAM, VPC Security, SSL/TLS, AWS KMS, Security Groups, NACLs</h5>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Databases:</h5>
+          <h5 class="timeline-text">AWS RDS (MySQL, PostgreSQL), DynamoDB</h5>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>
+
+
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21855.336544954833!2d72.80104619787697!3d33.6882954409142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa2335e80520f%3A0xfc81d7db7a273055!2sMulti%20Gardens%20B-17%2C%20Islamabad%2C%20Rawalpindi%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e1!3m2!1sen!2s!4v1732658338050!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <address></address>
+          <form action="#" class="form">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
